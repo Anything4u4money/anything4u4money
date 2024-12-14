@@ -1,0 +1,33 @@
+/* Home.css */
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+    background-color: #1890ff; /* Blue color for arrows */
+    border-radius: 50%; /* Circular arrows */
+    opacity: 0.7;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ant-carousel .slick-prev:hover, .ant-carousel .slick-next:hover {
+    background-color: #40a9ff; /* Slightly lighter blue on hover */
+  }
+  
+  .ant-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ant-carousel .slick-slide {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ant-carousel .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

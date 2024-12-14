@@ -1,18 +1,41 @@
 import React from 'react';
-import { Menu } from 'antd';
+import { Menu, Dropdown, Button } from 'antd';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
+  const languageMenu = (
+    <Menu>
+      <Menu.Item key="en" onClick={() => changeLanguage('en')}>
+        English
+      </Menu.Item>
+      <Menu.Item key="hi" onClick={() => changeLanguage('hi')}>
+        हिंदी
+      </Menu.Item>
+    </Menu>
+  );
+
   return (
     <Menu mode="horizontal" theme="dark">
       <Menu.Item key="home">
-        <Link to="/">Home</Link>
+        <Link to="/">{t('navbar.home')}</Link>
       </Menu.Item>
       <Menu.Item key="about">
-        <Link to="/about">About</Link>
+        <Link to="/about">{t('navbar.about')}</Link>
       </Menu.Item>
       <Menu.Item key="contact">
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">{t('navbar.contact')}</Link>
+      </Menu.Item>
+      <Menu.Item key="language" style={{ marginLeft: 'auto' }}>
+        <Dropdown overlay={languageMenu} trigger={['click']}>
+          <Button>{t('navbar.language')}</Button>
+        </Dropdown>
       </Menu.Item>
     </Menu>
   );
