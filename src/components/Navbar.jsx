@@ -2,11 +2,14 @@ import React from 'react';
 import { Menu, Dropdown, Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { analytics } from '../configs/firebase';
+import { logEvent } from 'firebase/analytics';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lang) => {
+    logEvent(analytics, `language_change_${lang}`);
     i18n.changeLanguage(lang);
   };
 
