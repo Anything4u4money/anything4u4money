@@ -7,19 +7,19 @@
   },
   "home": {
     "title": "Welcome to Jasus.com",
-    "description": "We provide detailed information for your partners and deals. Whether it's personal or professional, we've got you covered.",
+    "description": "If you're feeling betrayed or unsure about your partner, we help you uncover the truth. Personal or professional, we provide the information you need to make informed decisions. We never save or share our clients' data with anyone. Please feel free to contact us.",
     "slides": {
       "wife_husband": {
-        "title": "Wife/Husband Information",
-        "description": "Get insights into your spouse's interests, preferences, and more."
+        "title": "Investigate Your Spouse",
+        "description": "Get detailed insights to address your doubts about your spouse's actions or intentions."
       },
       "business_partner": {
-        "title": "Business Partner Information",
-        "description": "Understand your business partner's goals and strategies for a successful collaboration."
+        "title": "Verify Your Business Partner",
+        "description": "Ensure transparency and accountability in your business relationships."
       },
       "any_kind": {
-        "title": "Any Kind of Information",
-        "description": "Detailed information tailored to your unique needs."
+        "title": "Bespoke Investigative Services",
+        "description": "Tailored solutions for any situation where you need to uncover the truth."
       }
     }
   },
