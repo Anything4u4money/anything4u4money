@@ -7,19 +7,19 @@
   },
   "home": {
     "title": "Welcome to Jasus.com",
-    "description": "If you're feeling betrayed or unsure about your partner, we help you uncover the truth. Personal or professional, we provide the information you need to make informed decisions. We never save or share our clients' data with anyone. Please feel free to contact us.",
+    "description": "If you're feeling betrayed or unsure about your partner, we help you uncover the truth. Whether it's personal matters like your spouse's behavior or professional concerns with a business partner, we provide detailed and reliable information to address your doubts. Our services are designed to give you clarity and peace of mind in making informed decisions. We strictly respect your privacy, and we never save or share our clients' data with anyone. Your trust is our priority. Please feel free to contact us with confidence.",
     "slides": {
       "wife_husband": {
         "title": "Investigate Your Spouse",
-        "description": "Get detailed insights to address your doubts about your spouse's actions or intentions."
+        "description": "Uncover the truth about your spouse's activities and intentions. Whether you're dealing with suspicions of infidelity, unusual behavior, or hidden actions, our services provide the insights you need to make informed personal decisions."
       },
       "business_partner": {
         "title": "Verify Your Business Partner",
-        "description": "Ensure transparency and accountability in your business relationships."
+        "description": "Ensure your business partnerships are built on trust and transparency. Investigate your partner's goals, history, and strategies to avoid conflicts and make informed, strategic business decisions."
       },
       "any_kind": {
         "title": "Bespoke Investigative Services",
-        "description": "Tailored solutions for any situation where you need to uncover the truth."
+        "description": "No matter the situation, we offer customized investigative solutions to meet your unique needs. Whether personal or professional, we aim to uncover the truth and deliver clarity when it matters most."
       }
     }
   },
