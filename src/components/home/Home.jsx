@@ -1,8 +1,10 @@
 import React from 'react';
-import { Typography, Card, Row, Col, Carousel } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';  // Import icons for arrows
+import { Typography, Card, Row, Col, Carousel, Image } from 'antd';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-import './Home.css';  // Custom CSS file for styling
+import './Home.css';
+import About from '../about/About';
+import Contact from '../Contact';
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
@@ -12,63 +14,79 @@ const Home = () => {
 
   const slides = [
     {
-      title: t('home.slides.wife_husband.title'),
-      description: t('home.slides.wife_husband.description'),
-      image: '/images/couple.jpg'
+      title: t('home.slides.information_gathering.title'),
+      description: t('home.slides.information_gathering.description'),
+      image: '/images/information.jpg'
     },
     {
-      title: t('home.slides.business_partner.title'),
-      description: t('home.slides.business_partner.description'),
-      image: '/images/meeting.jpg'
+      title: t('home.slides.payment_recovery.title'),
+      description: t('home.slides.payment_recovery.description'),
+      image: '/images/payment.jpg'
     },
     {
-      title: t('home.slides.any_kind.title'),
-      description: t('home.slides.any_kind.description'),
-      image: '/images/unique.jpg'
+      title: t('home.slides.general_assistance.title'),
+      description: t('home.slides.general_assistance.description'),
+      image: '/images/assistance.jpg'
     }
   ];
 
   return (
-    <div style={{ padding: '20px' }}>
-      <Title>{t('home.title')}</Title>
-      <Paragraph>{t('home.description')}</Paragraph>
+    <div>
+      
+      <Title style={{ color: '#fff', textAlign: 'center' }}>{t('home.title')}</Title>
+      <Paragraph style={{
+        color: '#f0f0f0',
+        textAlign: 'center',
+        maxWidth: '800px',
+        margin: '0 auto'
+      }}>
+        {t('home.description')}
+      </Paragraph>
 
       <Carousel
         autoplay
         arrows
         prevArrow={<LeftOutlined style={{ fontSize: '24px', color: 'rgba(0, 0, 0, 0.65)' }} />}
         nextArrow={<RightOutlined style={{ fontSize: '24px', color: 'rgba(0, 0, 0, 0.65)' }} />}
-        style={{ position: 'relative' }}
+        style={{ position: 'relative', marginTop: '20px' }}
       >
         {slides.map((slide, index) => (
           <div key={index}>
-            <Row justify="center">
-              <Col span={12}>
-                <Card
-                  cover={
-                    <img
-                      alt={slide.title}
-                      src={slide.image}
-                      style={{
-                        width: '100%',          // Ensures it stretches to fill the container
-                        height: '300px',        // Fixed height
-                        objectFit: 'cover',     // Maintains aspect ratio, cropping if necessary
-                        borderRadius: '8px'
-                      }}
-                    />
-                  }
+            <Row gutter={[16, 16]} justify="center" align="middle">
+
+
+              {/* Image on the right */}
+              <Col xs={24} sm={12} md={12} lg={12}>
+                <img
+                  alt={slide.title}
+                  src={slide.image}
                   style={{
-                    margin: '20px auto',
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                    width: '100%',
+                    height: '350px',
+                    borderRadius: '8px',
+                    objectFit: 'cover'
                   }}
-                >
-                  <Meta title={slide.title} description={slide.description} />
-                </Card>
+                />
+              </Col>
+
+              {/* Content on the left */}
+              <Col xs={24} sm={12} md={12} lg={12}>
+                <div style={{ paddingRight: '20px' }}>
+                  <Title level={2} style={{ color: '#fff' }}>
+                    {slide.title}
+                  </Title>
+                  <Paragraph style={{ color: '#f0f0f0' }}>
+                    {slide.description}
+                  </Paragraph>
+                </div>
               </Col>
             </Row>
           </div>
         ))}
       </Carousel>
+
+      <Contact />
+      <About />
     </div>
   );
 };

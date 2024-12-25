@@ -6,20 +6,20 @@
     "language": "Language"
   },
   "home": {
-    "title": "Welcome to Jasus.com",
-    "description": "If you're feeling betrayed or unsure about your partner, we help you uncover the truth. Whether it's personal matters like your spouse's behavior or professional concerns with a business partner, we provide detailed and reliable information to address your doubts. Our services are designed to give you clarity and peace of mind in making informed decisions. We strictly respect your privacy, and we never save or share our clients' data with anyone. Your trust is our priority. Please feel free to contact us with confidence.",
+    "title": "Your Reliable Partner for Confidential Investigations",
+    "description": "We provide information gathering, payment recovery, and general assistance services to help you make informed decisions. Our services comply with legal guidelines and respect your privacy. We do not engage in unlawful surveillance or activities that breach confidentiality. Trust us to deliver reliable support while adhering to the law.",
     "slides": {
-      "wife_husband": {
-        "title": "Investigate Your Spouse",
-        "description": "Uncover the truth about your spouse's activities and intentions. Whether you're dealing with suspicions of infidelity, unusual behavior, or hidden actions, our services provide the insights you need to make informed personal decisions."
+      "information_gathering": {
+        "title": "Information Gathering",
+        "description": "Gain legally compliant insights and information about individuals or entities to aid in your decision-making process."
       },
-      "business_partner": {
-        "title": "Verify Your Business Partner",
-        "description": "Ensure your business partnerships are built on trust and transparency. Investigate your partner's goals, history, and strategies to avoid conflicts and make informed, strategic business decisions."
+      "payment_recovery": {
+        "title": "Payment Recovery Services",
+        "description": "Recover overdue payments through legal channels and professional assistance."
       },
-      "any_kind": {
-        "title": "Bespoke Investigative Services",
-        "description": "No matter the situation, we offer customized investigative solutions to meet your unique needs. Whether personal or professional, we aim to uncover the truth and deliver clarity when it matters most."
+      "general_assistance": {
+        "title": "General Assistance",
+        "description": "Avail personalized services tailored to your unique requirements, within the boundaries of the law."
       }
     }
   },
