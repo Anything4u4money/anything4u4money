@@ -14,10 +14,10 @@ const Contact = () => {
     // Send form data to EmailJS
     emailjs
       .send(
-        'service_un9y7pg', // Replace with your EmailJS service ID
-        'template_f3524pq', // Replace with your EmailJS template ID
+        'service_hbth4gi', // Replace with your EmailJS service ID
+        'template_w7xu8wo', // Replace with your EmailJS template ID
         values, // This will send form data to your email template
-        'A4vib8Uf7cVIE4EMo' // Replace with your EmailJS user ID
+        'Ga9rMfVxqHQnOe57v' // Replace with your EmailJS user ID
       )
       .then((response) => {
         console.log('Success:', response);
