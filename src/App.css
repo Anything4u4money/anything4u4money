@@ -1,4 +1,8 @@
 /* Basic reset for smooth scrolling */
+* {
+ font-size: x-large;
+}
+
 html, body {
   margin: 0;
   padding: 0;

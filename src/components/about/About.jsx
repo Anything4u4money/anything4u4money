@@ -11,8 +11,8 @@ const About = () => {
     <div
       style={{
         padding: '20px',
-        backgroundColor: '#f9f9f9', // Light background for better contrast
-        minHeight: '100vh', // Full viewport height for balance
+        // backgroundColor: '#f9f9f9', // Light background for better contrast
+        // minHeight: '100vh', // Full viewport height for balance
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

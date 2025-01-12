@@ -1,13 +1,15 @@
 {
   "navbar": {
     "home": "Home",
+    "services": "Services",
     "about": "About",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "language": "Language"
   },
   "home": {
-    "title": "Your Reliable Partner for Confidential Investigations",
-    "description": "We provide information gathering, payment recovery, and general assistance services to help you make informed decisions. Our services comply with legal guidelines and respect your privacy. We do not engage in unlawful surveillance or activities that breach confidentiality. Trust us to deliver reliable support while adhering to the law.",
+    "title": "We take care of your tasks",
+    "subtitle": "so you can focus on what matters.",
+    "description": "From personal errands to professional support, we handle it all with care and precision.",
     "slides": {
       "information_gathering": {
         "title": "Information Gathering",
@@ -20,8 +22,19 @@
       "general_assistance": {
         "title": "General Assistance",
         "description": "Avail personalized services tailored to your unique requirements, within the boundaries of the law."
+      },
+      "pilgrimage_assistance": {
+        "title": "Pilgrimage Assistance",
+        "description": "Plan and execute hassle-free trips to holy sites for your loved ones."
+      },
+      "fraud_detection": {
+        "title": "Fraud Detection Services",
+        "description": "Identify fraudsters or cheaters in your personal or business life and protect your interests."
       }
     }
+  },
+  "services": {
+    "title": "Our Services"
   },
   "about": {
     "title": "About Us",
@@ -59,6 +72,6 @@
     "error": "Something went wrong. Please try again."
   },
   "footer": {
-    "copyright": "Jasus.com. All rights reserved."
+    "copyright": "anything-4u.com. All rights reserved."
   }
 }

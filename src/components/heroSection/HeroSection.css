@@ -1,0 +1,58 @@
+/* Hero Section CSS */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem;
+    overflow: hidden;
+  }
+  
+  .hero-section h1,
+  .hero-section p {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+    animation-fill-mode: forwards; /* Ensure the animation stays in place */
+  }
+  
+  .hero-text.animate-text {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add some fancy effects */
+  .hero-section h1 {
+    animation-delay: 0.2s;
+  }
+  
+  .hero-section p {
+    animation-delay: 0.5s;
+  }
+  
+  .hero-section .ant-btn {
+    animation: fadeIn 1s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Menu, Dropdown, Button, Switch } from 'antd';
+import { Menu, Switch } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
@@ -11,45 +10,51 @@ const Navbar = () => {
     i18n.changeLanguage(lang);
   };
 
-  // Language change handler for the switch
   const handleLanguageChange = (checked) => {
-    if (checked) {
-      changeLanguage('hi'); // Change to Hindi
-    } else {
-      changeLanguage('en'); // Change to English
-    }
+    changeLanguage(checked ? 'hi' : 'en');
+  };
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth',
+    });
   };
 
   return (
-    <Menu mode="horizontal" theme="dark">
-      {/* Home menu item */}
-      <Menu.Item key="home">
-        <Link to="/">{t('navbar.home')}</Link>
-      </Menu.Item>
-
-      {/* About menu item */}
-      <Menu.Item key="about">
-        <Link to="/about">{t('navbar.about')}</Link>
-      </Menu.Item>
-
-      {/* Contact menu item */}
-      <Menu.Item key="contact">
-        <Link to="/contact">{t('navbar.contact')}</Link>
-      </Menu.Item>
-
-      {/* Language switch with icon */}
-      <Menu.Item key="language" style={{ marginLeft: 'auto' }}>
-        <div className="flex items-center">
-          <GlobalOutlined style={{ marginRight: 8 }} /> {/* Global icon */}
-          <Switch
-            defaultChecked={i18n.language === 'hi'}
-            onChange={handleLanguageChange}
-            checkedChildren="हिंदी" // Hindi
-            unCheckedChildren="English" // English
-          />
-        </div>
-      </Menu.Item>
-    </Menu>
+    <div>
+      <Menu
+        mode="horizontal"
+        theme="light"
+        style={{
+          justifyContent: 'flex-end',
+          backgroundColor: 'unset',
+        }}
+      >
+        <Menu.Item key="home" onClick={() => scrollToSection('home')}>
+          <span className="text-lg text-gray-700 hover:text-blue-600">{t('navbar.home')}</span>
+        </Menu.Item>
+        <Menu.Item key="services" onClick={() => scrollToSection('services')}>
+          <span className="text-lg text-gray-700 hover:text-blue-600">{t('navbar.services')}</span>
+        </Menu.Item>
+        <Menu.Item key="about" onClick={() => scrollToSection('about')}>
+          <span className="text-lg text-gray-700 hover:text-blue-600">{t('navbar.about')}</span>
+        </Menu.Item>
+        <Menu.Item key="contact" onClick={() => scrollToSection('contact')}>
+          <span className="text-lg text-gray-700 hover:text-blue-600">{t('navbar.contact')}</span>
+        </Menu.Item>
+        <Menu.Item key="language">
+          <div className="flex items-center">
+            <GlobalOutlined style={{ marginRight: 8 }} />
+            <Switch
+              defaultChecked={i18n.language === 'hi'}
+              onChange={handleLanguageChange}
+              checkedChildren="हिंदी"
+              unCheckedChildren="English"
+            />
+          </div>
+        </Menu.Item>
+      </Menu>
+    </div>
   );
 };
 

@@ -36,7 +36,7 @@ const Contact = () => {
         display: 'flex',
         justifyContent: 'left',
         alignItems: 'center',
-        minHeight: '100vh', // Full viewport height
+        // minHeight: '100vh', // Full viewport height
         padding: '20px',
       }}
     >
